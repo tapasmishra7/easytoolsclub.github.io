@@ -1,64 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasySpend - Smart Monthly Expense Tracker</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.6; }
-        .hero { background: #FF5722; color: white; padding: 100px 20px; text-align: center; }
-        .hero h1 { margin: 0; font-size: 3em; }
-        .hero p { font-size: 1.2em; opacity: 0.9; }
-        .container { max-width: 1000px; margin: auto; padding: 50px 20px; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .feature-card { padding: 20px; border-radius: 12px; border: 1px solid #eee; transition: 0.3s; }
-        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .feature-card h3 { color: #FF5722; }
-        .contact { background: #fff5f2; padding: 50px 20px; text-align: center; border-radius: 12px; margin-top: 50px; }
-        .contact h2 { color: #FF5722; }
-        .footer { text-align: center; padding: 40px 20px; background: #f9f9f9; font-size: 0.9em; }
-        .btn { display: inline-block; background: white; color: #FF5722; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 20px; }
-        .btn-primary { background: #FF5722; color: white; }
-    </style>
-</head>
-<body>
-    <div class="hero">
-        <h1>EasySpend</h1>
-        <p>Your minimalist, secure, and offline-first expense tracker.</p>
-        <a href="#" class="btn">Coming Soon to Google Play</a>
-    </div>
-
-    <div class="container">
-        <h2>Why Choose EasySpend?</h2>
-        <div class="features">
-            <div class="feature-card">
-                <h3>Privacy First</h3>
-                <p>No account required. Your data stays on your device—we never see it.</p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>EasyToolsClub | EasySpend - Smart Monthly Expense Tracker</title>
+      <style>
+         *{
+         margin:0;
+         padding:0;
+         box-sizing:border-box;
+         }
+         body{
+         font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+         color:#333;
+         line-height:1.6;
+         background:#fff;
+         }
+         /* Navigation */
+         header{
+         position:sticky;
+         top:0;
+         background:#fff;
+         box-shadow:0 2px 10px rgba(0,0,0,.06);
+         z-index:999;
+         }
+         nav{
+         max-width:1100px;
+         margin:auto;
+         padding:18px 20px;
+         display:flex;
+         justify-content:space-between;
+         align-items:center;
+         }
+         .logo{
+         font-size:24px;
+         font-weight:bold;
+         color:#FF5722;
+         }
+         nav ul{
+         display:flex;
+         list-style:none;
+         gap:30px;
+         }
+         nav a{
+         text-decoration:none;
+         color:#444;
+         font-weight:600;
+         }
+         nav a:hover{
+         color:#FF5722;
+         }
+         /* Hero */
+         .hero{
+         background:#FF5722;
+         color:#fff;
+         text-align:center;
+         padding:100px 20px;
+         }
+         .hero h1{
+         font-size:56px;
+         margin-bottom:15px;
+         }
+         .hero p{
+         max-width:700px;
+         margin:auto;
+         font-size:20px;
+         opacity:.95;
+         }
+         .btn{
+         display:inline-block;
+         margin-top:35px;
+         padding:14px 34px;
+         border-radius:40px;
+         text-decoration:none;
+         font-weight:bold;
+         transition:.25s;
+         }
+         .btn-primary{
+         background:white;
+         color:#FF5722;
+         }
+         .btn-primary:hover{
+         transform:translateY(-2px);
+         }
+         /* Sections */
+         .container{
+         max-width:1100px;
+         margin:auto;
+         padding:70px 20px;
+         }
+         .section-title{
+         text-align:center;
+         margin-bottom:45px;
+         font-size:36px;
+         }
+         /* Features */
+         .features{
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+         gap:25px;
+         }
+         .card{
+         border:1px solid #eee;
+         border-radius:14px;
+         padding:25px;
+         transition:.25s;
+         background:#fff;
+         }
+         .card:hover{
+         transform:translateY(-5px);
+         box-shadow:0 12px 30px rgba(0,0,0,.08);
+         }
+         .card h3{
+         color:#FF5722;
+         margin-bottom:12px;
+         }
+         /* Apps */
+         .apps{
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+         gap:25px;
+         }
+         .app-card{
+         border:1px solid #eee;
+         border-radius:15px;
+         padding:30px;
+         }
+         .app-card h3{
+         color:#FF5722;
+         margin-bottom:15px;
+         }
+         .download-btn{
+         display:inline-block;
+         margin-top:20px;
+         background:#FF5722;
+         color:white;
+         padding:12px 25px;
+         border-radius:30px;
+         text-decoration:none;
+         font-weight:bold;
+         }
+         .download-btn:hover{
+         opacity:.9;
+         }
+         /* About */
+         .about{
+         background:#fff8f5;
+         border-radius:16px;
+         padding:40px;
+         }
+         /* Support */
+         .contact{
+         text-align:center;
+         background:#fff5f2;
+         padding:50px;
+         border-radius:15px;
+         }
+         .email-btn{
+         display:inline-block;
+         margin-top:20px;
+         background:#FF5722;
+         color:white;
+         text-decoration:none;
+         padding:14px 30px;
+         border-radius:30px;
+         }
+         /* Footer */
+         footer{
+         background:#fafafa;
+         text-align:center;
+         padding:35px;
+         margin-top:60px;
+         border-top:1px solid #eee;
+         }
+         footer a{
+         text-decoration:none;
+         color:#FF5722;
+         }
+         footer p{
+         margin:8px 0;
+         }
+         html{
+         scroll-behavior:smooth;
+         }
+         @media(max-width:700px){
+         nav{
+         flex-direction:column;
+         gap:15px;
+         }
+         .hero h1{
+         font-size:40px;
+         }
+         .hero p{
+         font-size:18px;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div class="logo">EasyToolsClub</div>
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#apps">Apps</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#support">Support</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section class="hero" id="home">
+         <h1>EasySpend</h1>
+         <p>
+            Track your monthly expenses with ease.
+            <br><br>
+            Private • Offline-first • Multi-Currency • No Sign-up Required
+         </p>
+         <a class="btn btn-primary"
+            href="https://play.google.com/store/apps/details?id=com.easytoolsclub.easyspend"
+            target="_blank">
+         📱 Download on Google Play
+         </a>
+      </section>
+      <section class="container">
+         <h2 class="section-title">Why Choose EasySpend?</h2>
+         <div class="features">
+            <div class="card">
+               <h3>Privacy First</h3>
+               <p>No account required. Your data never leaves your device.</p>
             </div>
-            <div class="feature-card">
-                <h3>Multi-Currency Support</h3>
-                <p>Supports 160+ world currencies with localized formatting.</p>
+            <div class="card">
+               <h3>Offline First</h3>
+               <p>Works completely offline with no internet dependency.</p>
             </div>
-            <div class="feature-card">
-                <h3>Smart Budgeting</h3>
-                <p>Plan your month effectively and track progress in real-time.</p>
+            <div class="card">
+               <h3>160+ Currencies</h3>
+               <p>Track expenses in your preferred currency with localized formatting.</p>
             </div>
-            <div class="feature-card">
-                <h3>Detailed Reports</h3>
-                <p>Export your monthly expenses as PDF to share or keep for your records.</p>
+            <div class="card">
+               <h3>Budget Planning</h3>
+               <p>Create monthly budgets and monitor your spending progress.</p>
             </div>
-        </div>
-
-        <div class="contact" id="contact">
+            <div class="card">
+               <h3>Income Management</h3>
+               <p>Manage income sources alongside expenses for a complete financial overview.</p>
+            </div>
+            <div class="card">
+               <h3>PDF Reports</h3>
+               <p>Export professional monthly reports with a single tap.</p>
+            </div>
+         </div>
+      </section>
+      <section class="container" id="apps">
+         <h2 class="section-title">Our Apps</h2>
+         <div class="apps">
+            <div class="app-card">
+               <h3>📱 EasySpend</h3>
+               <p>
+                  A smart monthly expense tracker built for simplicity, privacy and speed.
+               </p>
+               <a
+                  class="download-btn"
+                  href="https://play.google.com/store/apps/details?id=com.easytoolsclub.easyspend"
+                  target="_blank">
+               Download on Google Play
+               </a>
+            </div>
+            <div class="app-card">
+               <h3>🚀 More Apps Coming Soon</h3>
+               <p>
+                  EasyToolsClub is building a collection of simple, fast and privacy-focused Android apps.
+                  Stay tuned for exciting new productivity tools.
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="container" id="about">
+         <div class="about">
+            <h2 class="section-title">About EasyToolsClub</h2>
+            <p>
+               EasyToolsClub develops modern Android applications focused on simplicity,
+               privacy and productivity.
+               Our mission is to build apps that solve everyday problems without requiring
+               accounts, subscriptions or unnecessary data collection.
+            </p>
+         </div>
+      </section>
+      <section class="container" id="support">
+         <div class="contact">
             <h2>Support & Feedback</h2>
-            <p>Have questions or suggestions? We'd love to hear from you.</p>
-            <a href="mailto:support@easytoolsclub.in" class="btn btn-primary">Email Support</a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2026 EasyToolsClub. Made with ♡ in India.</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-    </div>
-</body>
+            <p>
+               Have questions, feedback or feature requests?
+               We'd love to hear from you.
+            </p>
+            <a
+               href="mailto:support@easytoolsclub.in"
+               class="email-btn">
+            Email Support
+            </a>
+         </div>
+      </section>
+      <footer>
+         <p><strong>EasyToolsClub</strong></p>
+         <p>
+            <a href="#home">Home</a> |
+            <a href="#apps">Apps</a> |
+            <a href="https://easytoolsclub.in/privacy.html">Privacy Policy</a> |
+            <a href="https://easytoolsclub.in/terms.html">Terms of Service</a>
+         </p>
+         <p>
+            © 2026 EasyToolsClub. Made with ❤️ in India.
+         </p>
+      </footer>
+   </body>
 </html>
