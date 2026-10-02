@@ -1,0 +1,23 @@
+body[data-page="home"] .surface-band {
+  padding-block: var(--section-spacing);
+}
+
+body[data-page="home"] .surface-band h2 {
+  max-width: 12ch;
+}
+
+@media (max-width: 768px) {
+  body[data-page="home"] .surface-band {
+    padding-block: var(--space-16);
+  }
+
+  body[data-page="home"] .surface-band h2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body[data-page="home"] .surface-band {
+    padding-block: var(--space-12);
+  }
+}

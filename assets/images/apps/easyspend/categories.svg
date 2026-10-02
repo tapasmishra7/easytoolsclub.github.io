@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img" aria-labelledby="title desc">
+  <title id="title">Categories screenshot placeholder</title>
+  <desc id="desc">Placeholder image reserved for the EasySpend categories screenshot.</desc>
+  <rect width="720" height="1280" fill="#FFFFFF"/>
+  <rect x="36" y="36" width="648" height="1208" rx="32" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="4"/>
+  <rect x="96" y="156" width="420" height="48" rx="24" fill="#E2E8F0"/>
+  <rect x="96" y="286" width="216" height="160" rx="24" fill="#DBEAFE"/>
+  <rect x="408" y="286" width="216" height="160" rx="24" fill="#DBEAFE"/>
+  <rect x="96" y="510" width="216" height="160" rx="24" fill="#DBEAFE"/>
+  <rect x="408" y="510" width="216" height="160" rx="24" fill="#DBEAFE"/>
+  <rect x="96" y="734" width="216" height="160" rx="24" fill="#DBEAFE"/>
+  <rect x="408" y="734" width="216" height="160" rx="24" fill="#DBEAFE"/>
+  <text x="360" y="1088" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#0F172A">Categories</text>
+</svg>

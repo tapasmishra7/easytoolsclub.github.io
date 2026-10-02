@@ -1,316 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>EasyToolsClub | EasySpend - Smart Monthly Expense Tracker</title>
-      <style>
-         *{
-         margin:0;
-         padding:0;
-         box-sizing:border-box;
-         }
-         body{
-         font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
-         color:#333;
-         line-height:1.6;
-         background:#fff;
-         }
-         /* Navigation */
-         header{
-         position:sticky;
-         top:0;
-         background:#fff;
-         box-shadow:0 2px 10px rgba(0,0,0,.06);
-         z-index:999;
-         }
-         nav{
-         max-width:1100px;
-         margin:auto;
-         padding:18px 20px;
-         display:flex;
-         justify-content:space-between;
-         align-items:center;
-         }
-         .logo{
-         font-size:24px;
-         font-weight:bold;
-         color:#FF5722;
-         }
-         nav ul{
-         display:flex;
-         list-style:none;
-         gap:30px;
-         }
-         nav a{
-         text-decoration:none;
-         color:#444;
-         font-weight:600;
-         }
-         nav a:hover{
-         color:#FF5722;
-         }
-         /* Hero */
-         .hero{
-         background:#FF5722;
-         color:#fff;
-         text-align:center;
-         padding:100px 20px;
-         }
-         .hero h1{
-         font-size:56px;
-         margin-bottom:15px;
-         }
-         .hero p{
-         max-width:700px;
-         margin:auto;
-         font-size:20px;
-         opacity:.95;
-         }
-         .btn{
-         display:inline-block;
-         margin-top:35px;
-         padding:14px 34px;
-         border-radius:40px;
-         text-decoration:none;
-         font-weight:bold;
-         transition:.25s;
-         }
-         .btn-primary{
-         background:white;
-         color:#FF5722;
-         }
-         .btn-primary:hover{
-         transform:translateY(-2px);
-         }
-         /* Sections */
-         .container{
-         max-width:1100px;
-         margin:auto;
-         padding:70px 20px;
-         }
-         .section-title{
-         text-align:center;
-         margin-bottom:45px;
-         font-size:36px;
-         }
-         /* Features */
-         .features{
-         display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-         gap:25px;
-         }
-         .card{
-         border:1px solid #eee;
-         border-radius:14px;
-         padding:25px;
-         transition:.25s;
-         background:#fff;
-         }
-         .card:hover{
-         transform:translateY(-5px);
-         box-shadow:0 12px 30px rgba(0,0,0,.08);
-         }
-         .card h3{
-         color:#FF5722;
-         margin-bottom:12px;
-         }
-         /* Apps */
-         .apps{
-         display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-         gap:25px;
-         }
-         .app-card{
-         border:1px solid #eee;
-         border-radius:15px;
-         padding:30px;
-         }
-         .app-card h3{
-         color:#FF5722;
-         margin-bottom:15px;
-         }
-         .download-btn{
-         display:inline-block;
-         margin-top:20px;
-         background:#FF5722;
-         color:white;
-         padding:12px 25px;
-         border-radius:30px;
-         text-decoration:none;
-         font-weight:bold;
-         }
-         .download-btn:hover{
-         opacity:.9;
-         }
-         /* About */
-         .about{
-         background:#fff8f5;
-         border-radius:16px;
-         padding:40px;
-         }
-         /* Support */
-         .contact{
-         text-align:center;
-         background:#fff5f2;
-         padding:50px;
-         border-radius:15px;
-         }
-         .email-btn{
-         display:inline-block;
-         margin-top:20px;
-         background:#FF5722;
-         color:white;
-         text-decoration:none;
-         padding:14px 30px;
-         border-radius:30px;
-         }
-         /* Footer */
-         footer{
-         background:#fafafa;
-         text-align:center;
-         padding:35px;
-         margin-top:60px;
-         border-top:1px solid #eee;
-         }
-         footer a{
-         text-decoration:none;
-         color:#FF5722;
-         }
-         footer p{
-         margin:8px 0;
-         }
-         html{
-         scroll-behavior:smooth;
-         }
-         @media(max-width:700px){
-         nav{
-         flex-direction:column;
-         gap:15px;
-         }
-         .hero h1{
-         font-size:40px;
-         }
-         .hero p{
-         font-size:18px;
-         }
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <nav>
-            <div class="logo">EasyToolsClub</div>
-            <ul>
-               <li><a href="#home">Home</a></li>
-               <li><a href="#apps">Apps</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#support">Support</a></li>
-            </ul>
-         </nav>
-      </header>
-      <section class="hero" id="home">
-         <h1>EasySpend</h1>
-         <p>
-            Track your monthly expenses with ease.
-            <br><br>
-            Private • Offline-first • Multi-Currency • No Sign-up Required
-         </p>
-         <a class="btn btn-primary"
-            href="https://play.google.com/store/apps/details?id=com.easytoolsclub.easyspend"
-            target="_blank">
-         📱 Download on Google Play
-         </a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EasyToolsClub | Offline-first productivity and finance software</title>
+    <meta name="description" content="EasyToolsClub builds Android applications, offline-first web apps, finance tools, productivity software, and practical utility apps.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563EB">
+    <meta name="application-name" content="EasyToolsClub">
+    <link rel="canonical" href="https://easytoolsclub.in/">
+    <meta property="og:title" content="EasyToolsClub | Offline-first productivity and finance software">
+    <meta property="og:description" content="EasyToolsClub builds Android applications, offline-first web apps, finance tools, productivity software, and practical utility apps.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easytoolsclub.in/">
+    <meta property="og:site_name" content="EasyToolsClub">
+    <meta property="og:image" content="https://easytoolsclub.in/assets/images/logo/logo.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="EasyToolsClub | Offline-first productivity and finance software">
+    <meta name="twitter:description" content="EasyToolsClub builds Android applications, offline-first web apps, finance tools, productivity software, and practical utility apps.">
+    <meta name="twitter:image" content="https://easytoolsclub.in/assets/images/logo/logo.svg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/assets/images/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/images/favicon/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "EasyToolsClub",
+        "url": "https://easytoolsclub.in/",
+        "logo": "https://easytoolsclub.in/assets/images/logo/logo.svg",
+        "description": "EasyToolsClub builds Android applications, offline-first web apps, finance tools, productivity software, and practical utility apps.",
+        "sameAs": [
+          "https://github.com/EasyToolsClub"
+        ]
+      }
+    </script>
+    <script type="module" src="/assets/js/main.js"></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div data-component="navbar"></div>
+    <main id="main">
+      <section class="hero hero-grid">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="badge">Software company</span>
+            <h1>Useful software for focused work, money, and everyday systems.</h1>
+            <p>EasyToolsClub builds fast Android apps, offline-first web applications, productivity software, finance tools, and reliable utility apps.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="/apps/">Explore apps</a>
+              <a class="button button-secondary" href="/about/">About the company</a>
+            </div>
+          </div>
+          <div class="hero-panel" aria-label="EasyToolsClub product areas">
+            <div class="metric-card">
+              <span>Focus</span>
+              <strong>Offline-first</strong>
+              <p>Tools designed to keep working when networks do not.</p>
+            </div>
+            <div class="metric-grid">
+              <div><strong>Android</strong><span>Native utilities</span></div>
+              <div><strong>Finance</strong><span>Money workflows</span></div>
+              <div><strong>Web</strong><span>Installable apps</span></div>
+              <div><strong>Productivity</strong><span>Daily systems</span></div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="container">
-         <h2 class="section-title">Why Choose EasySpend?</h2>
-         <div class="features">
-            <div class="card">
-               <h3>Privacy First</h3>
-               <p>No account required. Your data never leaves your device.</p>
-            </div>
-            <div class="card">
-               <h3>Offline First</h3>
-               <p>Works completely offline with no internet dependency.</p>
-            </div>
-            <div class="card">
-               <h3>160+ Currencies</h3>
-               <p>Track expenses in your preferred currency with localized formatting.</p>
-            </div>
-            <div class="card">
-               <h3>Budget Planning</h3>
-               <p>Create monthly budgets and monitor your spending progress.</p>
-            </div>
-            <div class="card">
-               <h3>Income Management</h3>
-               <p>Manage income sources alongside expenses for a complete financial overview.</p>
-            </div>
-            <div class="card">
-               <h3>PDF Reports</h3>
-               <p>Export professional monthly reports with a single tap.</p>
-            </div>
-         </div>
+
+      <section class="section">
+        <div class="container section-heading">
+          <span class="eyebrow">What we build</span>
+          <h2>Durable tools with a calm, practical interface.</h2>
+        </div>
+        <div class="container card-grid three">
+          <article class="card">
+            <span class="icon-box"><img src="/assets/images/icons/home/smartphone.svg" alt="" class="icon-img"></span>
+            <h3>Android Applications</h3>
+            <p>Small, capable mobile apps for real-life workflows, built with performance and clarity in mind.</p>
+          </article>
+          <article class="card">
+            <span class="icon-box"><img src="/assets/images/icons/home/offline.svg" alt="" class="icon-img"></span>
+            <h3>Offline-first Web Apps</h3>
+            <p>Browser-based tools that keep important work available locally and sync-friendly by design.</p>
+          </article>
+          <article class="card">
+            <span class="icon-box"><img src="/assets/images/icons/home/hand-coins.svg" alt="" class="icon-img"></span>
+            <h3>Finance Tools</h3>
+            <p>Personal finance utilities for tracking, planning, reviewing, and making better money decisions.</p>
+          </article>
+        </div>
       </section>
-      <section class="container" id="apps">
-         <h2 class="section-title">Our Apps</h2>
-         <div class="apps">
-            <div class="app-card">
-               <h3>📱 EasySpend</h3>
-               <p>
-                  A smart monthly expense tracker built for simplicity, privacy and speed.
-               </p>
-               <a
-                  class="download-btn"
-                  href="https://play.google.com/store/apps/details?id=com.easytoolsclub.easyspend"
-                  target="_blank">
-               Download on Google Play
-               </a>
-            </div>
-            <div class="app-card">
-               <h3>🚀 More Apps Coming Soon</h3>
-               <p>
-                  EasyToolsClub is building a collection of simple, fast and privacy-focused Android apps.
-                  Stay tuned for exciting new productivity tools.
-               </p>
-            </div>
-         </div>
+
+      <section class="section surface-band">
+        <div class="container split">
+          <div>
+            <span class="eyebrow">Foundation</span>
+            <h2>Designed for the next decade of products.</h2>
+          </div>
+          <div class="feature-list">
+            <p><strong>Reusable system:</strong> shared navigation, footer, tokens, components, and page styles.</p>
+            <p><strong>Accessible by default:</strong> semantic HTML, skip links, focus states, landmarks, and responsive layout.</p>
+            <p><strong>GitHub Pages ready:</strong> no build tools, backend, database, package manager, or framework dependency.</p>
+          </div>
+        </div>
       </section>
-      <section class="container" id="about">
-         <div class="about">
-            <h2 class="section-title">About EasyToolsClub</h2>
-            <p>
-               EasyToolsClub develops modern Android applications focused on simplicity,
-               privacy and productivity.
-               Our mission is to build apps that solve everyday problems without requiring
-               accounts, subscriptions or unnecessary data collection.
-            </p>
-         </div>
+
+      <section class="section" data-home-blog-section hidden>
+        <div class="container section-heading">
+          <span class="eyebrow">Latest from the Blog</span>
+          <h2>Recent notes from EasyToolsClub.</h2>
+        </div>
+        <div class="container card-grid three" data-home-blog></div>
       </section>
-      <section class="container" id="support">
-         <div class="contact">
-            <h2>Support & Feedback</h2>
-            <p>
-               Have questions, feedback or feature requests?
-               We'd love to hear from you.
-            </p>
-            <a
-               href="mailto:support@easytoolsclub.in"
-               class="email-btn">
-            Email Support
-            </a>
-         </div>
-      </section>
-      <footer>
-         <p><strong>EasyToolsClub</strong></p>
-         <p>
-            <a href="#home">Home</a> |
-            <a href="#apps">Apps</a> |
-            <a href="https://easytoolsclub.in/privacy.html">Privacy Policy</a> |
-            <a href="https://easytoolsclub.in/terms.html">Terms of Service</a>
-         </p>
-         <p>
-            © 2026 EasyToolsClub. Made with ❤️ in India.
-         </p>
-      </footer>
-   </body>
+    </main>
+    <div data-component="footer"></div>
+  </body>
 </html>
