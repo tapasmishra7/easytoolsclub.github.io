@@ -37,10 +37,10 @@ export const PRODUCTS = [
     websiteUrl: "/apps/easyspend/",
     icon: "ES",
     screenshots: [
-      { label: "Dashboard", src: "/assets/images/apps/easyspend/dashboard.svg", alt: "EasySpend dashboard screenshot placeholder" },
-      { label: "Budget", src: "/assets/images/apps/easyspend/budget.svg", alt: "EasySpend budget screenshot placeholder" },
-      { label: "Analytics", src: "/assets/images/apps/easyspend/analytics.svg", alt: "EasySpend analytics screenshot placeholder" },
-      { label: "Categories", src: "/assets/images/apps/easyspend/categories.svg", alt: "EasySpend categories screenshot placeholder" }
+      { label: "Dashboard", src: "/assets/images/apps/easyspend/dashboard.png", alt: "EasySpend dashboard screenshot placeholder" },
+      { label: "Budget", src: "/assets/images/apps/easyspend/budget.png", alt: "EasySpend budget screenshot placeholder" },
+      { label: "Analytics", src: "/assets/images/apps/easyspend/analytics.png", alt: "EasySpend analytics screenshot placeholder" },
+      { label: "Categories", src: "/assets/images/apps/easyspend/categories.png", alt: "EasySpend categories screenshot placeholder" }
     ],
     featured: true,
     showInFooter: true,
