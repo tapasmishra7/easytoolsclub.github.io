@@ -1,0 +1,19 @@
+{
+  "name": "EasyToolsClub",
+  "short_name": "EasyToolsClub",
+  "description": "Practical Android apps, offline-first web applications, finance tools, and productivity software.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F8FAFC",
+  "theme_color": "#2563EB",
+  "categories": ["productivity", "finance", "utilities"],
+  "icons": [
+    {
+      "src": "/assets/images/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

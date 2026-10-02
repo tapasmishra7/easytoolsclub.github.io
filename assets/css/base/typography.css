@@ -1,0 +1,79 @@
+html {
+  font-family: var(--font-family-base);
+  font-size: 100%;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-normal);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-tight);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  max-width: 70ch;
+  color: var(--color-text-muted);
+  text-wrap: pretty;
+}
+
+strong,
+b {
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+}
+
+small {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+a {
+  transition: color var(--transition-base), opacity var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-family-mono);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-primary);
+}

@@ -1,0 +1,18 @@
+.support-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: clamp(var(--space-8), 5vw, var(--space-16));
+}
+
+.support-layout h2 {
+  max-width: 12ch;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .support-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}

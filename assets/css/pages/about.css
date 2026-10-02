@@ -1,0 +1,3 @@
+body[data-page="about"] .info-grid .card h2 {
+  max-width: 16ch;
+}

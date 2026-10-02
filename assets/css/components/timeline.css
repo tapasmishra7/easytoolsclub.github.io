@@ -1,0 +1,39 @@
+.timeline {
+  display: grid;
+  gap: var(--space-4);
+}
+.timeline article {
+  display: grid;
+  grid-template-columns: minmax(3rem, 4rem) minmax(0, 1fr);
+  gap: var(--space-5);
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.timeline span {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.timeline h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-3);
+  grid-column: 2;
+}
+.timeline p {
+  grid-column: 2;
+}
+@media (max-width: 560px) {
+  .timeline article {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+    padding-block: var(--space-5);
+  }
+
+  .timeline span,
+  .timeline h2,
+  .timeline p {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="EasySpend app preview">
+  <rect width="320" height="240" rx="24" fill="#FFFFFF"/>
+  <rect x="24" y="24" width="272" height="192" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="48" y="48" width="96" height="18" rx="9" fill="#0F172A"/>
+  <rect x="48" y="88" width="224" height="44" rx="14" fill="#DBEAFE"/>
+  <rect x="48" y="148" width="92" height="40" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="156" y="148" width="116" height="40" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+</svg>
